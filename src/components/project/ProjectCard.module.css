@@ -1,0 +1,17 @@
+.project_card {
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 24%;
+    margin: 0.5%;
+
+
+}
+
+.project_card h4{
+    background-color: rgb(51, 51, 51);
+    color: rgb(218, 181, 16);
+    padding: 0.4em;
+    margin-bottom: 1.3em;
+    font-size: 1.3em;
+}
