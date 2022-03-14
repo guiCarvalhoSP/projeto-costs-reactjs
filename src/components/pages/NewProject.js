@@ -1,11 +1,11 @@
-import { useNatigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import ProjectForm from '../project/ProjectForm';
 import styles from './NewProject.module.css'
 
 function NewProject(){
 
-    const navigate = useNatigate()
+    const navigate = useNavigate()
 
     function createPost(project) {
         
@@ -15,16 +15,17 @@ function NewProject(){
 
         fetch('http://localhost:5000/projects', {
             method: 'POST',
-            Headers: {
+            headers: {
                 'Content-type': 'application/json',
             },
+            body: JSON.stringify(project),
         })
         .then(resp => resp.json)
         .then((data) => {
             // Redirect
             navigate('/projects', {message: 'Projeto criado com sucesso!'})
         })
-        .cathch(err => console.log(err))
+        .catch(err => console.log(err))
     }
 
     return(
