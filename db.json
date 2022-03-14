@@ -1,5 +1,24 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "GUILHERME DIAS DE CARVALHO",
+      "budget": "2000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 1500,
+      "services": [
+        {
+          "name": "Contratação",
+          "cost": "1500",
+          "description": "Descrição qualquer",
+          "id": "530ffe6e-b9f1-4424-9284-50f8b391e762"
+        }
+      ],
+      "id": 1
+    }
+  ],
   "categories": [
     {
       "id": 1,

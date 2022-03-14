@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { parse, v4 as uuidv4 } from 'uuid'
-import styles from './Projects.module.css'
+import styles from './Project.module.css'
 
 import ServiceCard from '../service/ServiceCard'
 import Container from '../../layout/Container'
@@ -181,11 +181,11 @@ function Project(){
                         {services.length > 0 &&
                             services.map((service) => (
                                 <ServiceCard 
-                                    id={services.id}
-                                    name={services.name}
-                                    cost={services.cost}
-                                    description={services.description}
-                                    key={services.id}
+                                    id={service.id}
+                                    name={service.name}
+                                    cost={service.cost}
+                                    description={service.description}
+                                    key={service.id}
                                     handleRemove={removeService}
                                 />
                             ))
